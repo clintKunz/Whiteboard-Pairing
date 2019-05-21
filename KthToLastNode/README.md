@@ -25,3 +25,13 @@ d.next = e;
 kthToLastNode(2, a);  // returns the node with value "Dobermann" (the 2nd to last node)
 ```
 
+def kthToLastNode(kth, list):
+  q = []
+  
+  next = a
+  while next is not None:
+    q.append(next.value)
+    next = next.next
+
+  return q[kth]
+

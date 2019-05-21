@@ -6,16 +6,20 @@ def format(string):
 
   if '(' in string:
     first_open = string.index('(')
+    print(first_open)
 
     i = 0
     while i < first_open:
       result += '('
       i += 1
-    
+
     for j in range(i):
       result += string[j]
+      print(result)
+      
   
   string = string[i:]
+  print(string)
 
   result+= string
 
@@ -33,20 +37,7 @@ def format(string):
   
   return result
 
-test = ')))('
+test = ')))()(()('
 print(format(test))
 
-
-
-
-
-
-
-
-
-test1 = '((()'
-test2 = ')()(('
-
-print(balanceParentheses(test1)) # should be '((()))'
-print(balanceParentheses(test2)) # should be '()()(())'
 
